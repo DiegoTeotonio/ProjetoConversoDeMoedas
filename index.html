@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
     <title>DevClub-Convert Money</title>
 </head>
 
@@ -21,8 +21,13 @@
     <main>
         <label>
             Converter <b>de</b>
-            <select>
-                <option>R$ Real Brasilerio</option>
+            <select class="currency-select1">
+                <option value="real1">R$ Real Brasilerio</option>
+                <option value="dola1">US$ Dólar americano</option>
+                <option value="euro1">€ Euro</option>
+                <option value="yene1">￥Yene Japones</option>
+                <option value="bitcoin1"> ₿ Bitcoin</option>
+                <option value="libra1"> £ Libra</option>
             </select>
         </label>
         <label>
@@ -33,11 +38,14 @@
                 <option value="yene">￥Yene Japones</option>
                 <option value="bitcoin"> ₿ Bitcoin</option>
                 <option value="libra"> £ Libra</option>
+                <option value="real">R$ Real Brasilerio</option>
             </select>
         </label>
-       
-            valor
-            <input class="imput-currency" placeholder="R$ 10.000,00">
+<label>
+    valor
+    <input class="input-currency" placeholder="R$ 10.000,00">
+</label>
+     
         </label>
         <button class="convert-button">Converter</button>
         <section>
@@ -47,13 +55,13 @@
             </div>
 
             <img class="arrow" src="./assets/Vector.png" alt="seta">
-            
-                <div class="currency-box"> 
-                    <img class="currency-imagem" src="./assets/Dolar.png"alt="logo-moeda-convertida">
-                    <p class="currency" id="currency-name">Dólar</p>
-                    <p class="currency-value">US$ 0.0</p>
-                </div>
-            </section>
+
+            <div class="currency-box">
+                <img class="currency-imagem" src="./assets/Dolar.png" alt="logo-moeda-convertida">
+                <p class="currency" id="currency-name">Dólar Americano</p>
+                <p class="currency-value">US$ 0.0</p>
+            </div>
+        </section>
 
     </main>
 
